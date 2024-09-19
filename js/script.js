@@ -105,7 +105,7 @@ async function displayAlbum() {
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
 
-    if (e.href.includes("/songs/") && !e.href.includes(".htaccess")) {
+    if (e.href.includes("/songs") && !e.href.includes(".htaccess")) {
         let folder = e.href.split("/").slice(-2)[0]
 
         //get the meta data of the folder
@@ -149,8 +149,8 @@ async function displayAlbum() {
 async function main() {
 
     // get the list of all songs
-    await getSongs("songs/phonk")
-    playMusic(songs[1], true)
+    await getSongs("songs/hindi")
+    playMusic(songs[0], true)
 
     //display all the albums on the page
     displayAlbum()
