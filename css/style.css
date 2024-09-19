@@ -389,6 +389,10 @@ h2{
         align-items: center;
     }
 
+    .copyright{
+        bottom: 72px;
+    }
+
 }
 
 @media (max-width: 500px) {
