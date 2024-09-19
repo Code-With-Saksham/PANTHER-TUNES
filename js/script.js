@@ -1,3 +1,4 @@
+console.log("Let's play the music")
 let currentSong = new Audio();
 let songs;
 let currFolder;
