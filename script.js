@@ -155,7 +155,7 @@ async function displayAlbum() {
 async function main() {
 
     // get the list of all songs
-    await getSongs("songs/PHONK")
+    await getSongs("songs/phonk")
     console.log(songs)
 
     playMusic(songs[0], true)
@@ -246,18 +246,6 @@ async function main() {
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
         currentSong.volume = parseInt(e.target.value) / 100
     })
-
-    //add an event listner to card to play when tapped
-    
-    // document.querySelector(".card-container").addEventListener("click" , ()=>{
-    //     // currentSong.src = `/${currFolder}/` + track
-
-    //     currentSong.play()
-    //     play.src = "pause.svg"
-
-    // document.querySelector(".songInfo").innerHTML = decodeURI(track)
-    // document.querySelector(".songTime").innerHTML = "00:00 / 00:00"
-    // }
 
 }
 
