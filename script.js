@@ -149,7 +149,7 @@ async function main() {
 
     // get the list of all songs
     await getSongs("songs/phonk")
-    playMusic(songs[0], true)
+    playMusic(songs[1], true)
 
     //display all the albums on the page
     await displayAlbum()
