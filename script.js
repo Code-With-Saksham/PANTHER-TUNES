@@ -1,5 +1,3 @@
-console.log("hello world");
-
 let currentSong = new Audio();
 let songs;
 let currFolder;
@@ -24,16 +22,12 @@ async function getSongs(folder) {
     currFolder = folder;
     let a = await fetch(`/${folder}/`)
     let response = await a.text()
-
-    console.log(response)
-
     let div = document.createElement("div")
 
     div.innerHTML = response;
 
     let as = div.getElementsByTagName("a")
     songs = []
-
     for (let index = 0; index < as.length; index++) {
 
         const element = as[index];
@@ -56,7 +50,6 @@ async function getSongs(folder) {
                              <img src="music.svg" alt="">
                              <div class="info">
                                  <div> ${song.replaceAll("%20", " ")} </div>
-                                 
                             </div>
                             <img class="playNow" src="play.svg" alt="">
                         </li>`;
@@ -156,22 +149,18 @@ async function main() {
 
     // get the list of all songs
     await getSongs("songs/phonk")
-    console.log(songs)
-
     playMusic(songs[0], true)
 
     //display all the albums on the page
-    displayAlbum()
+    await displayAlbum()
 
 
     //Attatch an event listner to play , next and previious songs
     play.addEventListener("click", () => {
 
         if (currentSong.paused) {
-
             currentSong.play()
             play.src = "pause.svg"
-
         }
 
         else {
