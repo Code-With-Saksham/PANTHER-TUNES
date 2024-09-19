@@ -1,0 +1,73 @@
+.border {
+    border: 2px solid #121212;
+    margin: 3px;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.bg-purple {
+    background: rgb(121, 31, 205);
+    color: white;
+}
+
+.bg-grey {
+    background: #121212;
+    color: white;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.m1 {
+    margin: 6px;
+}
+
+.m2 {
+    margin: 10px;
+}
+
+.p1 {
+    padding: 10px;
+}
+
+/* Styling for webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px; /* Adjust the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #000000; /* Dark background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6a0dad; /* Purple color for the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+/* Optional: Styling for scrollbar hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8a2be2; /* Lighter purple color for the scrollbar thumb on hover */
+}
+
+
+@media (max-width: 1250px) {
+    .m1{
+        margin: 0;
+    }
+
+    .rounded{
+        border-radius: 0;
+    }
+}
