@@ -153,7 +153,7 @@ async function main() {
     playMusic(songs[1], true)
 
     //display all the albums on the page
-    await displayAlbum()
+    displayAlbum()
 
 
     //Attatch an event listner to play , next and previious songs
