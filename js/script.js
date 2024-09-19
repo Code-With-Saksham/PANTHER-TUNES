@@ -47,11 +47,11 @@ async function getSongs(folder) {
 
         songUL.innerHTML = songUL.innerHTML +
             `<li> 
-                             <img src="music.svg" alt="">
+                             <img src="img/music.svg" alt="">
                              <div class="info">
                                  <div> ${song.replaceAll("%20", " ")} </div>
                             </div>
-                            <img class="playNow" src="play.svg" alt="">
+                            <img class="playNow" src="img/play.svg" alt="">
                         </li>`;
 
     }
@@ -78,7 +78,7 @@ const playMusic = (track, pause = false) => {
 
     if (!pause) {
         currentSong.play()
-        play.src = "pause.svg"
+        play.src = "img/pause.svg"
     }
 
     document.querySelector(".songInfo").innerHTML = decodeURI(track)
@@ -160,13 +160,13 @@ async function main() {
 
         if (currentSong.paused) {
             currentSong.play()
-            play.src = "pause.svg"
+            play.src = "img/pause.svg"
         }
 
         else {
 
             currentSong.pause()
-            play.src = "play.svg"
+            play.src = "img/play.svg"
 
         }
 
