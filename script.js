@@ -126,7 +126,7 @@ async function displayAlbum() {
                                 stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" fill="white" />
                         </svg>
                     </div>
-                        <img src="/songs/${folder}/cover.webp" alt="">
+                        <img src="/songs/${folder}/cover.jpg" alt="">
                         <h2>${response.title}</h2>
                         <p>${response.description}</p>  
                     </div>`
